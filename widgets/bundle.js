@@ -188,6 +188,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // import Weather from './weather';
 
 var tabs = [{
   header: "first",
@@ -201,11 +202,13 @@ var tabs = [{
 }];
 document.addEventListener('DOMContentLoaded', function () {
   var clock = document.querySelector('#clock');
-  var tabs_el = document.querySelector('#tabs');
+  var tabs_el = document.querySelector('#tabs'); // const weather = document.querySelector('#weather');
+
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_clock__WEBPACK_IMPORTED_MODULE_2__["default"], null), clock);
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
     tabs: tabs
-  }), tabs_el);
+  }), tabs_el); // ReactDOM.render(<Weather></Weather>);
+  //as a last step come back here 
 });
 
 /***/ }),

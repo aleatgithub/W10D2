@@ -21,11 +21,11 @@ class Tabs extends React.Component {
   render(){ //come back here  and unerstand line 32
     let tabsRender = this.props.tabs.map((tabInfo, idx) => {
       return (<li onClick={this.changeActiveIdx(idx)}><TabHeader header={tabInfo.header}></TabHeader></li>)
-    })
+    });
 
     return (
       <div>
-        <ul >Tabs
+        <ul>Tabs
         {
           tabsRender 
         }
